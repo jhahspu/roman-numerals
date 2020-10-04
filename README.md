@@ -1,7 +1,7 @@
 # roman and arabic numerals converter
 Simple conversion tool.
 ####
-* Thanks to my neighbour for waking me up at 1am.. making me do something useful with my life :D *
+_ Thanks to my neighbour for waking me up at 1am.. making me do something useful with my life :D _
 ####
 Rules: work only with basic info from wiki and NO picking at other solutions.
 ####
