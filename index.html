@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="r.ico">
+  <link rel="stylesheet" href="style.css">
+  <title>Roman Numerals</title>
+</head>
+<body>
+
+  <main>
+
+    <section>
+      <h1>Roman Numerals</h1>
+      <h4>Knowing the following from Wiki, let's make a converter..</h4>
+      <div class="images">
+        <img src="symbol_value.png" alt="Symbol Value">
+        <img src="individual_decimal_places.png" alt="Individual Decimal Places">
+      </div>
+      
+    </section>
+
+    <section>
+      <label for="user-input">Number to convert (between 1 and 3000):</label>
+      <input type="number"
+              name="userinp"
+              id="user-input"
+              value="1"
+              min="1"
+              onkeydown="rez()"
+              onkeyup="rez()"
+              onchange="rez()">
+
+      <article>
+        <h2 id="result">-</h2>
+      </article>
+      
+    </section>
+    
+
+  </main>
+  
+  
+
+
+<script src="x.js"></script>
+</body>
+</html>

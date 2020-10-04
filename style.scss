@@ -1,0 +1,82 @@
+
+@mixin container {
+  width: 88%;
+  margin: 0 auto;
+  padding: 1rem 0;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+
+$bg: hsla(7, 90%, 3%, 1);
+$text: hsla(76, 90%, 97%, 1);
+$accent: hsla(76, 90%, 47%, 1);
+
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+:root {
+  font-size: 18px;
+
+  background-color: $bg;
+  color: $text;
+
+  font-family: sans-serif;
+
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+h1, h2, h3, h4 {
+  font-weight: 400;
+}
+h1 { font-size: 2rem; }
+h2 { font-size: 1.7rem; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.2rem; }
+
+img {
+  margin: 1rem;
+}
+
+main {
+  @include container();
+
+  .images {
+
+    img {
+      display: block;
+    }
+  }
+
+  input {
+    display: block;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+
+  article {
+    margin: 1rem 0;
+
+    h2 {
+      display: inline-block;
+      margin-left: 10vw;
+      padding: 0.5rem 1rem;
+      border: 2px solid $text;
+      color: $accent;
+      font-family: serif;
+      text-align: center;
+    }
+  }
+
+  
+}

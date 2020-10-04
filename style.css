@@ -1,0 +1,85 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+:root {
+  font-size: 18px;
+  background-color: #0f0201;
+  color: #fbfef0;
+  font-family: sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    font-size: 16px;
+  }
+}
+
+h1, h2, h3, h4 {
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.7rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+img {
+  margin: 1rem;
+}
+
+main {
+  width: 88%;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+main .images img {
+  display: block;
+}
+
+main input {
+  display: block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+main article {
+  margin: 1rem 0;
+}
+
+main article h2 {
+  display: inline-block;
+  margin-left: 10vw;
+  padding: 0.5rem 1rem;
+  border: 2px solid #fbfef0;
+  color: #aae40c;
+  font-family: serif;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
