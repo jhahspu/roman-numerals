@@ -3,8 +3,8 @@ Simple conversion tool. Thanks to my neighbour for waking me up at 1am.. so I pu
 As for rules: work only with basic info from wiki and NO picking at other solutions.
 
 ToDo:
--[X] Arabic -> Roman
--[ ] Roman -> Arabic
+- [x] Arabic -> Roman
+- [ ] Roman -> Arabic
 
 ### https://jhahspu.github.io/roman-numerals/
 
