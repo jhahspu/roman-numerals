@@ -1,6 +1,7 @@
 
 @mixin container {
   width: 88%;
+  max-width: 960px;
   margin: 0 auto;
   padding: 1rem 0;
 
@@ -51,6 +52,10 @@ img {
 main {
   @include container();
 
+  section {
+    margin: 1rem 0;
+  }
+
   .images {
 
     img {
@@ -64,19 +69,34 @@ main {
     font-size: 1rem;
   }
 
-  article {
-    margin: 1rem 0;
+  input[type=text] {
+    text-transform: uppercase;
+  }
 
-    h2 {
-      display: inline-block;
-      margin-left: 10vw;
-      padding: 0.5rem 1rem;
-      border: 2px solid $text;
-      color: $accent;
-      font-family: serif;
-      text-align: center;
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+
+    article {
+
+      h2 {
+        display: inline-block;
+        margin: 1rem 0;
+        padding: 0.5rem 1rem;
+        border: 2px solid $text;
+        color: $accent;
+        font-family: serif;
+        text-align: center;
+        text-transform: uppercase;
+      }
     }
   }
+  
 
   
 }

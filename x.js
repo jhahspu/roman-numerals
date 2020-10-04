@@ -1,15 +1,21 @@
-const userInput = document.getElementById('user-input');
-const result = document.getElementById('result');
+// Arabic to Roman numerals
 
-const rez = () => {
-  let tempVal = conv(userInput.value);
-  result.innerHTML = tempVal;
+const inputArabic = document.getElementById('input-arabic');
+const resultRoman = document.getElementById('result-roman');
+
+inputArabic.addEventListener('change', function(){ inputArabicChange(this.value); });
+inputArabic.addEventListener('keyup', function() { inputArabicChange(this.value); });
+
+const inputArabicChange = (val) => {
+  let tempVal = convRoman(val);
+  resultRoman.innerHTML = tempVal;
 }
 
-const conv = (str) => {
+const convRoman = (str) => {
   if (parseInt(str) < 1 || parseInt(str) > 3000) {
     return str;
   }
+
   if (str.length === 1) {
     return units(parseInt(str));
   } else if(str.length === 2) {
@@ -111,6 +117,3 @@ const thousands = (n) => {
   }
 }
 
-document.addEventListener("DOMContentLoaded", function(event) { 
-  rez();
-});

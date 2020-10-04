@@ -1,10 +1,15 @@
-# roman-numerals
-Simple conversion tool. Thanks to my neighbour for waking me up at 1am.. so I put on a movie, hoping that I'll fall asleep and saw the MCMLX logo(or whatever it means), and because I always forget how to read beyond 39, I made this tool.. :D 
-As for rules: work only with basic info from wiki and NO picking at other solutions.
-
+# roman and arabic numerals converter
+Simple conversion tool.
+####
+*Thanks to my neighbour for waking me up at 1am.. making me do something useful with my life :D *
+####
+Rules: work only with basic info from wiki and NO picking at other solutions.
+####
 ToDo:
 - [x] Arabic -> Roman
-- [ ] Roman -> Arabic
+simple, because each letter of the value and it's position is unique
+- [x] Roman -> Arabic
+tougher..  
 
 ### https://jhahspu.github.io/roman-numerals/
 

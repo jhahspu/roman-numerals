@@ -48,6 +48,7 @@ img {
 
 main {
   width: 88%;
+  max-width: 960px;
   margin: 0 auto;
   padding: 1rem 0;
 }
@@ -57,6 +58,10 @@ main {
     width: 100%;
     padding: 1rem;
   }
+}
+
+main section {
+  margin: 1rem 0;
 }
 
 main .images img {
@@ -69,17 +74,33 @@ main input {
   font-size: 1rem;
 }
 
-main article {
-  margin: 1rem 0;
+main input[type=text] {
+  text-transform: uppercase;
 }
 
-main article h2 {
+main .grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  place-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  main .grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+main .grid article h2 {
   display: inline-block;
-  margin-left: 10vw;
+  margin: 1rem 0;
   padding: 0.5rem 1rem;
   border: 2px solid #fbfef0;
   color: #aae40c;
   font-family: serif;
   text-align: center;
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=style.css.map */

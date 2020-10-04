@@ -5,37 +5,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="r.ico">
   <link rel="stylesheet" href="style.css">
-  <title>Roman Numerals</title>
+  <title>Roman and Arabic Numeral Converter</title>
 </head>
 <body>
 
   <main>
 
     <section>
-      <h1>Roman Numerals</h1>
-      <h4>Knowing the following from Wiki, let's make a converter..</h4>
+      <h1>Numerals Converter</h1>
+      
+    </section>
+
+    <section class="grid">
+      <article>
+        <label for="input-arabic"><h3>Arabic to Roman</h3></label>
+        <input type="number"
+              name="input-arabic"
+              id="input-arabic"
+              value="1"
+              min="1">
+      
+        <h2 id="result-roman">I</h2>
+      </article>
+      
+      <article>
+        <label for="input-roman"><h3>Roman to Arabic</h3></label>
+        <input type="text"
+              name="input-roman"
+              id="input-roman"
+              placeholder="Roman Literals only">
+      
+        <h2 id="result-arabic">-</h2>
+      </article>
+    </section>
+
+
+    <section>
+      <h4>.. the basics</h4>
       <div class="images">
         <img src="symbol_value.png" alt="Symbol Value">
         <img src="individual_decimal_places.png" alt="Individual Decimal Places">
       </div>
-      
-    </section>
-
-    <section>
-      <label for="user-input">Number to convert (between 1 and 3000):</label>
-      <input type="number"
-              name="userinp"
-              id="user-input"
-              value="1"
-              min="1"
-              onkeydown="rez()"
-              onkeyup="rez()"
-              onchange="rez()">
-
-      <article>
-        <h2 id="result">-</h2>
-      </article>
-      
     </section>
     
 
@@ -44,6 +54,19 @@
   
 
 
-<script src="x.js"></script>
+<script defer src="x.js"></script>
+<script defer src="y.js"></script>
+
+<script>
+const values = ['Belgium', 'Brest', 'Britian']
+const query = 'Be'
+
+// /.*b.*e.*/
+const re = RegExp(`.*${query.toLowerCase().split('').join('.*')}.*`)
+
+// [ 'Belgium', 'Brest' ]
+const matches = values.filter(v => v.toLowerCase().match(re))
+
+</script>
 </body>
 </html>
